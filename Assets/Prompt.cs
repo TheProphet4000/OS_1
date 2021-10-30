@@ -1,28 +1,18 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Prompt : MonoBehaviour
 {
-    public string output, outText, input;
+    List<String> userInputArr = new List<String>();
 
-    public GameObject prompt;
-
-    private void Start()
+    public void ReadInput(string userInput)
     {
-        outText = GetComponent<Out> OutputText
-    }
-    public void ReadInput(string inText)
-    {
-        input = inText;
-        returnInput();
-    }
+        userInputArr.Add(userInput);
 
-    void returnInput()
-    {
-        output = input;
-
-        outText = output;
+        foreach (var userInputArr in userInputArr)
+        {
+            Debug.Log(userInputArr.ToString());
+        }
     }
 }

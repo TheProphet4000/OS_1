@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 244873353}
   - component: {fileID: 244873352}
   m_Layer: 5
-  m_Name: Text
+  m_Name: UserText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -316,9 +316,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b0dca900e7e8f4db43f733fe401562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  output: 
-  input: 
-  prompt: {fileID: 616122881}
+  userOut: 
+  outTextfield: 
+  userIn: 
+  TerminalWindow: {fileID: 0}
 --- !u!1 &408977307
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,7 +333,7 @@ GameObject:
   - component: {fileID: 408977310}
   - component: {fileID: 408977309}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: UserInput
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -569,7 +570,7 @@ GameObject:
   - component: {fileID: 616122884}
   - component: {fileID: 616122883}
   m_Layer: 5
-  m_Name: prompt
+  m_Name: Terminal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -645,7 +646,7 @@ GameObject:
   - component: {fileID: 1292768267}
   - component: {fileID: 1292768266}
   m_Layer: 5
-  m_Name: OutputText
+  m_Name: Dump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -703,7 +704,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Please replace this text
+  m_Text: 'Placeholder text
 
 '
 --- !u!222 &1292768267
